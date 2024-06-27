@@ -1,0 +1,25 @@
+<!DOCTYPE HTML >
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; img-src https://*; child-src 'none';"/>
+    <title>Welcome</title>
+    <!--    引入css样式-->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h1>welcome to electron</h1>
+<button id="btn1">click here</button>
+<br><br>
+<input id="input" type="text">
+<button id="btn2">向D盘写入 hello.txt</button>
+<br><br>
+<button id="btn3">读取D盘文件 hello.txt</button>
+</body>
+
+
+<!--需要引入脚本 否则button的事件无法使用-->
+<script type="application/javascript" src="render.js"></script>
+</html>

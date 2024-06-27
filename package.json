@@ -1,0 +1,36 @@
+{
+  "name": "my-electron",
+  "version": "1.0.0",
+  "description": "my electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon --exec electron .",
+    "start-cp": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.hong",
+    "win": {
+      "icon": "./logo2.jpg",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "author": "honggzb",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.1.0",
+    "electron-builder": "^24.13.3",
+    "nodemon": "^3.1.4"
+  }
+}
