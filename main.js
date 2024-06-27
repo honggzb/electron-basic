@@ -34,12 +34,12 @@ function createWindow() {
 
 function writeFile(event, data) {
     console.log(data)
-    fs.writeFileSync("D:/project/Electron/my-electron/helloworld.txt", data)
+    fs.writeFileSync("D:/helloworld.txt", data)
 }
 
 function readFile(event, data) {
     console.log(data)
-    var res = fs.readFileSync("D:/project/Electron/my-electron/helloworld.txt").toString();
+    var res = fs.readFileSync("D:/helloworld.txt").toString();
     console.log(res);
     return res;
 }
